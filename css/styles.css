@@ -1,0 +1,242 @@
+*:root{
+    --color-first:#05C7F2;
+    --color-second: #3FBF48;
+    --color-third: #38A640;
+    --color-fourtd: #F28F38;
+    --color-five: #2b6ca3;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main{
+    position: relative;
+    padding-top: 100px;
+    overflow: hidden;
+  }
+  .robots{
+    position: absolute;
+    z-index: -1;
+    opacity: .3;
+  }
+  .robots--blue{
+    top: 20%;
+    left: -10vw;
+  }
+  .robots--blue2{
+    top: 90%;
+    right: -10vw;
+  }
+  .robots--green{
+    top: 70%;
+    left: 5vw;
+  }
+  .robots--green2{
+    top: -5%;
+    left: 60vw;
+  }
+  .robots--orange{
+    top: 40%;
+    right: 20vw;
+  }
+
+  /********************** KITS *************************/
+
+
+  .kits{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-top: 100px;
+  }
+  .kits__titule{
+    text-align: center;
+    margin: 20px 0;
+  }
+  .container__cards{
+    width: 90%;
+    display: grid;
+    grid-auto-rows: 380px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  .kitsCard{
+    border-radius: 10px;
+    background-color: white;
+  }
+  .kitsCard__img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .kitsCard__img img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .kitsCard__body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .kitsCard__titule{
+    width: 90%;
+    margin: 10px;
+  }
+  .kitsCard__text{
+    width: 90%;
+    height: 120px;
+  }
+  .kitsCard__level{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .level{
+    border: 2px solid var(--color-third);
+    padding: 5px;
+    color: var(--color-third);
+    font-size: small;
+    font-weight: bold;
+  }
+
+/******************************************************************************************/
+.priceKits{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.priceKits__titule{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.priceKits__content{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.priceKits__containerCards{
+  width: 90%;
+  display: grid;
+  grid-auto-rows: 350px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.priceKits__Cards{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.priceKits__titule{
+  margin: 5px;
+}
+.priceKits__subtitule{
+  color: var(--color-third);
+  margin: 5px 0;
+}
+.PriceKits__price{
+  font-size: large;
+  font-weight: bold;
+}
+.box__btn{
+  display: flex;
+  justify-content: center;
+}
+.btn--color{
+  background-color: red;
+  color: white;
+  padding: 0 5px;
+  margin: 5px;
+}
+.btn--padding{
+  padding: 0 5px;
+  margin-top: 5px;
+}
+.btn--active:active{
+  transform: scale(.95);
+}
+
+/******************************** US **********************************/
+.us{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.usTitule{
+  width: 100%;
+  text-align: center;
+}
+.usCard{
+  width: 90%;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.usCard__titule{
+  width: 90%;
+  margin: 10px 0;
+}
+.usCard__text{
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+/******************************** FOOTER **********************************/
+
+.footer{
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerContainer__content{
+  width: 90%;
+  height: 80px;
+  border-top: solid 1px var(--color-five);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lawsCompany{
+  text-align: center;
+}
+.lawsCompany__date{
+  color: var(--color-five);
+}
+.container__social-icons{
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.social__icons{}
+.social-icons__item{}
+.social-icons__icon{
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+
