@@ -42,7 +42,7 @@
 :root{
     --color-BURBUJA:white; /*COLOR DE LA BURBUJA*/
     --color-LINEAS: var(--color-blue); /*COLOR DE LAS LINEAS*/
-    --color-PANEL: rgb(43, 108, 163, .7); /*COLOR DEL PANEL*/
+    --color-PANEL: rgb(43, 108, 163, .9); /*COLOR DEL PANEL*/
     --color-LETRAS: white; /*COLOR DE LAS LETRAS DEL PANEL*/
     --color-LETRAS_HOVER: var(--color-blue); /*COLOR DE LAS LETRAS AL PASAR SOBRE ELLAS*/
     --color-LETRAS_HOVER_BACKGROUND: white; /*COLOR DEL BACKGROUND DE LAS LETRAS AL PASAR SOBRE ELLAS*/

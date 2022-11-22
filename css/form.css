@@ -1,0 +1,53 @@
+*:root{
+    --width-Item:300px;
+}
+
+.contact__form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    width: var(--width-Item);
+    margin-bottom: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    outline: none;
+    color: dimgray;
+  }
+  
+  .input:invalid {
+    animation: justshake 0.3s forwards;
+    color: black;
+  }
+
+  .textarea{
+    width: var(--width-Item);
+    height: 150px;
+  }
+  
+  .btn--submit{
+    width: var(--width-Item);
+  }
+  
+  @keyframes justshake {
+    25% {
+      transform: translateX(5px);
+    }
+  
+    50% {
+      transform: translateX(-5px);
+    }
+  
+    75% {
+      transform: translateX(5px);
+    }
+  
+    100% {
+      transform: translateX-(5px);
+    }
+  }

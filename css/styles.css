@@ -61,13 +61,15 @@
   .container__cards{
     width: 90%;
     display: grid;
-    grid-auto-rows: 380px;
+    grid-auto-rows: 350px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 10px;
   }
   .kitsCard{
     border-radius: 10px;
     background-color: white;
+    justify-content: center;
+    align-items: center;
   }
   .kitsCard__img{
     border-top-left-radius: 10px;
@@ -79,6 +81,7 @@
   }
   .kitsCard__body{
     width: 100%;
+    height: 110px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -90,7 +93,6 @@
   }
   .kitsCard__text{
     width: 90%;
-    height: 120px;
   }
   .kitsCard__level{
     width: 90%;
@@ -98,6 +100,7 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    margin-top: 5px;
   }
   .level{
     border: 2px solid var(--color-third);
@@ -108,7 +111,7 @@
   }
 
 /******************************************************************************************/
-.priceKits{
+.packageKits{
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -116,22 +119,23 @@
   align-items: center;
   margin-bottom: 100px;
 }
-.priceKits__titule{
+.packageKits__titule{
   text-align: center;
   margin-bottom: 5px;
 }
-.priceKits__content{
+.packageKits__content{
+  width: 90%;
   margin-bottom: 20px;
   text-align: center;
 }
-.priceKits__containerCards{
+.packageKits__containerCards{
   width: 90%;
   display: grid;
-  grid-auto-rows: 370px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 30px;
+  grid-auto-rows: 380px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
 }
-.priceKits__Cards{
+.packageKits__Cards{
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -139,16 +143,18 @@
   align-items: center;
   background-color: white;
 }
-.priceKits__titule{
+.packageKits__titule{
   margin: 5px;
 }
-.priceKits__subtitule{
+.packageKits__subtitule{
   color: var(--color-third);
-  margin: 5px 0;
+  text-align: center;
+  margin: 10px 0;
 }
-.PriceKits__price{
+.packageKits__price{
   font-size: large;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 .box__btn{
   display: flex;
@@ -157,11 +163,11 @@
 .btn--color{
   background-color: red;
   color: white;
-  padding: 0 5px;
+  padding: 5px 5px;
   margin: 5px;
 }
 .btn--padding{
-  padding: 0 5px;
+  padding: 5px 5px;
   margin-top: 5px;
 }
 .btn--active:active{
@@ -178,12 +184,17 @@
   margin-bottom: 100px;
 }
 .usTitule{
-  width: 100%;
   text-align: center;
+  margin-bottom: 20px;
+}
+.container__usCards{
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+  grid-template-rows:  auto auto auto auto;
+  gap: 10px;
 }
 .usCard{
-  width: 90%;
-  margin: 20px 0;
   border-radius: 10px;
   background-color: white;
   display: flex;
@@ -191,6 +202,19 @@
   justify-content: center;
   align-items: center;
 }
+.usCard--first{
+  grid-column: 1/3;
+  grid-row: 1/5;
+}
+.usCard--second{
+  grid-column: 3/6;
+  grid-row: 1/3;
+}
+.usCard--third{
+  grid-column: 3/6;
+  grid-row: 3/5;
+}
+
 .usCard__titule{
   width: 90%;
   margin: 10px 0;

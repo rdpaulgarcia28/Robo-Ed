@@ -1,0 +1,101 @@
+*:root{
+    --width-Input:100%;
+}
+
+.contact-section{
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__titule{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container__contact{
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+}
+.contact__left{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.contact__item{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px 5px;
+}
+.contact__icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 0px;
+}
+.contact__itemText{
+    margin: 0 5px;
+}
+
+
+/********************************** FORMULARIO *************************************/
+.contact__form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input{
+    width: var(--width-Input);
+    margin-bottom: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    outline: none;
+    color: dimgray;
+  }
+  
+  .input:invalid {
+    animation: justshake 0.3s forwards;
+    color: black;
+  }
+
+  .textarea{
+    width: var(--width-Input);
+    height: 150px;
+  }
+  
+  .btn--submit{
+    width: var(--width-Input);
+  }
+  
+  @keyframes justshake {
+    25% {
+      transform: translateX(5px);
+    }
+  
+    50% {
+      transform: translateX(-5px);
+    }
+  
+    75% {
+      transform: translateX(5px);
+    }
+  
+    100% {
+      transform: translateX-(5px);
+    }
+  }
