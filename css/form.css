@@ -32,6 +32,7 @@
   
   .btn--submit{
     width: var(--width-Item);
+    font-size: 16px;
   }
   
   @keyframes justshake {
